@@ -1,0 +1,77 @@
+{
+	"compilerOptions": {
+		"paths": {
+			"@components": [
+				"../src/lib/components"
+			],
+			"@components/*": [
+				"../src/lib/components/*"
+			],
+			"@data": [
+				"../src/demo-data"
+			],
+			"@data/*": [
+				"../src/demo-data/*"
+			],
+			"@store": [
+				"../src/lib/store"
+			],
+			"@store/*": [
+				"../src/lib/store/*"
+			],
+			"@apps": [
+				"../src/lib/view/apps"
+			],
+			"@apps/*": [
+				"../src/lib/view/apps/*"
+			],
+			"@view": [
+				"../src/lib/view"
+			],
+			"@view/*": [
+				"../src/lib/view/*"
+			],
+			"$lib": [
+				"../src/lib"
+			],
+			"$lib/*": [
+				"../src/lib/*"
+			]
+		},
+		"rootDirs": [
+			"..",
+			"./types"
+		],
+		"importsNotUsedAsValues": "error",
+		"isolatedModules": true,
+		"preserveValueImports": true,
+		"lib": [
+			"esnext",
+			"DOM",
+			"DOM.Iterable"
+		],
+		"moduleResolution": "node",
+		"module": "esnext",
+		"noEmit": true,
+		"target": "esnext"
+	},
+	"include": [
+		"ambient.d.ts",
+		"./types/**/$types.d.ts",
+		"../vite.config.js",
+		"../vite.config.ts",
+		"../src/**/*.js",
+		"../src/**/*.ts",
+		"../src/**/*.svelte",
+		"../tests/**/*.js",
+		"../tests/**/*.ts",
+		"../tests/**/*.svelte"
+	],
+	"exclude": [
+		"../node_modules/**",
+		"./[!ambient.d.ts]**",
+		"../src/service-worker.js",
+		"../src/service-worker.ts",
+		"../src/service-worker.d.ts"
+	]
+}

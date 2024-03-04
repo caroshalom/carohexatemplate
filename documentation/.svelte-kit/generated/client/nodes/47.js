@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/(common-layout)/features/charts/apex-charts/+page.svelte";
